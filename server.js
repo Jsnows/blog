@@ -279,6 +279,7 @@ app.get('/chensihan',function(req,res){
 })
 app.get('*', isProd ? render : (req, res) => {
     // 0.这里是第一步接收请求将req,res传递给render
+    console.log('请求来了')
     readyPromise.then(() => render(req, res))
 })
 
