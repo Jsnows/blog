@@ -7,9 +7,13 @@ import Router from 'vue-router'
  */
 Vue.use(Router)
 
-const Page = () => import('components/page/page.vue')
-const Article = () => import('components/article/article.vue')
-const aboutMe = () => import('components/about-me/about-me.vue')
+// const Page = () => import('components/page/page.vue')
+// const Article = () => import('components/article/article.vue')
+// const aboutMe = () => import('components/about-me/about-me.vue')
+
+import Page from 'components/page/page.vue'
+import Article from 'components/article/article.vue'
+import aboutMe from 'components/about-me/about-me.vue'
 
 const routes = [
     {
